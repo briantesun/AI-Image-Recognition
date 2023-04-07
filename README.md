@@ -1,6 +1,6 @@
 # AI-Image-Recognition
 
-Summary: A classification model that leverages transfer learning with the VGG16 architecture and pre-trained ImageNet weights. Initially, the top layers remain frozen during training to preserve the learned features. Data augmentation techniques enhance the training dataset, and fine-tuning the entire model improves its performance. Evaluating the model on a validation dataset ensures its accuracy and effectiveness in classifying fresh and rotten fruit.
+A classification model that leverages transfer learning with the VGG16 architecture and pre-trained ImageNet weights. Initially, the top layers remain frozen during training to preserve the learned features. Data augmentation techniques enhance the training dataset, and fine-tuning the entire model improves its performance. Evaluating the model on a validation dataset ensures its accuracy and effectiveness in classifying fresh and rotten fruit.
 
 You can find the dataset I used here: https://www.kaggle.com/datasets/sriramr/fruits-fresh-and-rotten-for-classification
 

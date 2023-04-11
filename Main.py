@@ -58,10 +58,10 @@ base_model.trainable = True
 model.compile(optimizer=keras.optimizers.RMSprop(learning_rate=1e-5),
               loss='categorical_crossentropy', metrics=['accuracy'])
 
-history_fine_tuning = model.fit(train_it,
-                                validation_data=valid_it,
-                                steps_per_epoch=train_it.samples/train_it.batch_size,
-                                validation_steps=valid_it.samples/valid_it.batch_size,
-                                epochs=10)
+model.fit(train_it,
+        validation_data=valid_it,
+        steps_per_epoch=train_it.samples/train_it.batch_size,
+        validation_steps=valid_it.samples/valid_it.batch_size,
+        epochs=10)
 
 model.evaluate(valid_it, steps=valid_it.samples/valid_it.batch_size)
